@@ -43,7 +43,7 @@
   width: var(--sidebar-width);
   box-sizing: border-box;
   padding: 20px;
-  background-color: #25cec0;
+  background-color: var(--primary);
   /*此处颜色为侧边栏颜色*/
   display: flex;
   flex-direction: column;
@@ -181,6 +181,7 @@
 
 .chat-item:hover {
   background-color: var(--hover-color);
+  /*鼠标悬停在新的聊天按钮时，按钮短暂的改变颜色*/
 }
 
 .chat-item-selected {
