@@ -490,7 +490,7 @@ export function ChatActions(props: {
           </>
         }
       />
-      {/*
+      {/*删除快捷命令按钮
         <ChatAction
         onClick={props.showPromptHints}
         text={Locale.Chat.InputActions.Prompt}

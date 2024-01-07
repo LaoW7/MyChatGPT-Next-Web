@@ -391,7 +391,7 @@ const cn = {
     Sysmessage: "你是一个助手",
   },
   Mask: {
-    Name: "Prompt",
+    Name: "定制你的专属Prompt",
     Page: {
       Title: "预设角色面具",
       SubTitle: (count: number) => `${count} 个预设角色定义`,

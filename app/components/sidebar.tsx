@@ -178,7 +178,7 @@ export function SideBar(props: { className?: string }) {
           shadow
         />
 
-        {/*
+        {/*隐藏插件按钮
           <IconButton
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}

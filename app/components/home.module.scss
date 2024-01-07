@@ -5,6 +5,7 @@
   box-shadow: var(--shadow);
   color: var(--black);
   background-color: var(--white);
+    /*此处颜色为聊天界面主题颜色*/
   min-width: 600px;
   min-height: 370px;
   max-width: 1200px;
@@ -42,7 +43,8 @@
   width: var(--sidebar-width);
   box-sizing: border-box;
   padding: 20px;
-  background-color: var(--second);
+  background-color: #25cec0;
+  /*此处颜色为侧边栏颜色*/
   display: flex;
   flex-direction: column;
   box-shadow: inset -2px 0px 2px 0px rgb(0, 0, 0, 0.05);
