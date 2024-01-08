@@ -1096,7 +1096,7 @@ function _Chat() {
               }}
             />
           </div>
-          {showMaxIcon && (
+          {/*隐藏最大化选项 {showMaxIcon && (
             <div className="window-action-button">
               <IconButton
                 icon={config.tightBorder ? <MinIcon /> : <MaxIcon />}
@@ -1108,7 +1108,7 @@ function _Chat() {
                 }}
               />
             </div>
-          )}
+          )} */}
         </div>
 
         <PromptToast
