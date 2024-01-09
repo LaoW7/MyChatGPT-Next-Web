@@ -21,6 +21,10 @@ export const BUILTIN_MASK_STORE = {
   },
 };
 
-export const BUILTIN_MASKS: BuiltinMask[] = [...CN_MASKS, ...EN_MASKS].map(
-  (m) => BUILTIN_MASK_STORE.add(m),
+// export const BUILTIN_MASKS: BuiltinMask[] = [...CN_MASKS, ...EN_MASKS].map(
+//   (m) => BUILTIN_MASK_STORE.add(m),
+// );
+//删除内置面具
+export const BUILTIN_MASKS: BuiltinMask[] = [].map((m) =>
+  BUILTIN_MASK_STORE.add(m),
 );
