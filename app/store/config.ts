@@ -35,7 +35,7 @@ export const DEFAULT_CONFIG = {
   //tightBorder: !!getClientConfig()?.isApp,
   //使得窗口永远最大化
   tightBorder: true,
-  sendPreviewBubble: true,
+  sendPreviewBubble: false,
   enableAutoGenerateTitle: true,
   sidebarWidth: DEFAULT_SIDEBAR_WIDTH,
 

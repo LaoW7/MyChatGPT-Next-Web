@@ -53,7 +53,7 @@ export function ModelConfigList(props: {
           }}
         ></InputRange>
       </ListItem>
-      <ListItem
+      {/* <ListItem
         title={Locale.Settings.TopP.Title}
         subTitle={Locale.Settings.TopP.SubTitle}
       >
@@ -71,7 +71,7 @@ export function ModelConfigList(props: {
             );
           }}
         ></InputRange>
-      </ListItem>
+      </ListItem> */}
       <ListItem
         title={Locale.Settings.MaxTokens.Title}
         subTitle={Locale.Settings.MaxTokens.SubTitle}
@@ -94,7 +94,7 @@ export function ModelConfigList(props: {
 
       {props.modelConfig.model === "gemini-pro" ? null : (
         <>
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.PresencePenalty.Title}
             subTitle={Locale.Settings.PresencePenalty.SubTitle}
           >
@@ -113,9 +113,9 @@ export function ModelConfigList(props: {
                 );
               }}
             ></InputRange>
-          </ListItem>
+          </ListItem> */}
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.FrequencyPenalty.Title}
             subTitle={Locale.Settings.FrequencyPenalty.SubTitle}
           >
@@ -134,9 +134,9 @@ export function ModelConfigList(props: {
                 );
               }}
             ></InputRange>
-          </ListItem>
+          </ListItem> */}
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.InjectSystemPrompts.Title}
             subTitle={Locale.Settings.InjectSystemPrompts.SubTitle}
           >
@@ -151,9 +151,9 @@ export function ModelConfigList(props: {
                 )
               }
             ></input>
-          </ListItem>
+          </ListItem> */}
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.InputTemplate.Title}
             subTitle={Locale.Settings.InputTemplate.SubTitle}
           >
@@ -166,7 +166,7 @@ export function ModelConfigList(props: {
                 )
               }
             ></input>
-          </ListItem>
+          </ListItem> */}
         </>
       )}
       <ListItem
@@ -187,7 +187,7 @@ export function ModelConfigList(props: {
         ></InputRange>
       </ListItem>
 
-      <ListItem
+      {/* <ListItem
         title={Locale.Settings.CompressThreshold.Title}
         subTitle={Locale.Settings.CompressThreshold.SubTitle}
       >
@@ -204,7 +204,7 @@ export function ModelConfigList(props: {
             )
           }
         ></input>
-      </ListItem>
+      </ListItem> */}
       <ListItem title={Locale.Memory.Title} subTitle={Locale.Memory.Send}>
         <input
           type="checkbox"
