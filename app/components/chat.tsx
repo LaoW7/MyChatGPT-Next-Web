@@ -1086,7 +1086,7 @@ function _Chat() {
               />
             </div>
           )}
-          <div className="window-action-button">
+          {/*删除分享按键 <div className="window-action-button">
             <IconButton
               icon={<ExportIcon />}
               bordered
@@ -1095,7 +1095,7 @@ function _Chat() {
                 setShowExport(true);
               }}
             />
-          </div>
+          </div> */}
           {/*隐藏最大化选项 {showMaxIcon && (
             <div className="window-action-button">
               <IconButton
