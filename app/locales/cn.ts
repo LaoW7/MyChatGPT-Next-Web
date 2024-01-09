@@ -67,12 +67,13 @@ const cn = {
     Rename: "重命名对话",
     Typing: "正在输入…",
     Input: (submitKey: string) => {
-      var inputHints = `${submitKey} 发送`;
+      var inputHints = ``;
       if (submitKey === String(SubmitKey.Enter)) {
-        inputHints += "，Shift + Enter 换行";
+        inputHints += "";
       }
-      return inputHints + "，/ 触发补全，: 触发命令";
+      return inputHints + "";
     },
+
     Send: "发送",
     Config: {
       Reset: "清除记忆",
