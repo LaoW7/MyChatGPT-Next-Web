@@ -393,13 +393,13 @@ const cn = {
   Mask: {
     Name: "定制你的专属Prompt",
     Page: {
-      Title: "预设角色面具",
-      SubTitle: (count: number) => `${count} 个预设角色定义`,
-      Search: "搜索角色面具",
+      Title: "Prompt列表",
+      SubTitle: (count: number) => `${count} 个已有的Prompt`,
+      Search: "搜索Prompt",
       Create: "新建",
     },
     Item: {
-      Info: (count: number) => `包含 ${count} 条预设对话`,
+      //Info: (count: number) => `包含 ${count} 条预设对话`,
       Chat: "对话",
       View: "查看",
       Edit: "编辑",
@@ -407,10 +407,9 @@ const cn = {
       DeleteConfirm: "确认删除？",
     },
     EditModal: {
-      Title: (readonly: boolean) =>
-        `编辑预设面具 ${readonly ? "（只读）" : ""}`,
-      Download: "下载预设",
-      Clone: "克隆预设",
+      Title: (readonly: boolean) => `编辑Prompt ${readonly ? "（只读）" : ""}`,
+      Download: "下载Prompt",
+      Clone: "克隆Prompt",
     },
     Config: {
       Avatar: "角色头像",
@@ -425,7 +424,7 @@ const cn = {
         SubTitle: "隐藏后预设对话不会出现在聊天界面",
       },
       Share: {
-        Title: "分享此面具",
+        Title: "分享此Prompt",
         SubTitle: "生成此面具的直达链接",
         Action: "复制链接",
       },
@@ -436,7 +435,7 @@ const cn = {
     Skip: "直接开始",
     NotShow: "不再展示",
     ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
-    Title: "挑选Prompt",
+    Title: "选择Prompt",
     SubTitle: "或者开动脑筋自己创造一个新的Prompt",
     More: "查看全部",
   },
