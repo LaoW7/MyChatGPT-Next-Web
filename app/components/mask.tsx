@@ -157,7 +157,7 @@ export function MaskConfig(props: {
           ></input>
         </ListItem>
 
-        {!props.shouldSyncFromGlobal ? (
+        {/* {!props.shouldSyncFromGlobal ? (
           <ListItem
             title={Locale.Mask.Config.Share.Title}
             subTitle={Locale.Mask.Config.Share.SubTitle}
@@ -168,7 +168,7 @@ export function MaskConfig(props: {
               onClick={copyMaskLink}
             />
           </ListItem>
-        ) : null}
+        ) : null} */}
 
         {props.shouldSyncFromGlobal ? (
           <ListItem
@@ -583,31 +583,33 @@ export function MaskPage() {
           <Modal
             title={Locale.Mask.EditModal.Title(editingMask?.builtin)}
             onClose={closeMaskModal}
-            actions={[
-              <IconButton
-                icon={<DownloadIcon />}
-                text={Locale.Mask.EditModal.Download}
-                key="export"
-                bordered
-                onClick={() =>
-                  downloadAs(
-                    JSON.stringify(editingMask),
-                    `${editingMask.name}.json`,
-                  )
-                }
-              />,
-              <IconButton
-                key="copy"
-                icon={<CopyIcon />}
-                bordered
-                text={Locale.Mask.EditModal.Clone}
-                onClick={() => {
-                  navigate(Path.Masks);
-                  maskStore.create(editingMask);
-                  setEditingMaskId(undefined);
-                }}
-              />,
-            ]}
+            actions={
+              [
+                // <IconButton
+                //   icon={<DownloadIcon />}
+                //   text={Locale.Mask.EditModal.Download}
+                //   key="export"
+                //   bordered
+                //   onClick={() =>
+                //     downloadAs(
+                //       JSON.stringify(editingMask),
+                //       `${editingMask.name}.json`,
+                //     )
+                //   }
+                // />,
+                // <IconButton
+                //   key="copy"
+                //   icon={<CopyIcon />}
+                //   bordered
+                //   text={Locale.Mask.EditModal.Clone}
+                //   onClick={() => {
+                //     navigate(Path.Masks);
+                //     maskStore.create(editingMask);
+                //     setEditingMaskId(undefined);
+                //   }}
+                // />,
+              ]
+            }
           >
             <MaskConfig
               mask={editingMask}
