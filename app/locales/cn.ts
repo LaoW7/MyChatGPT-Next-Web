@@ -332,7 +332,7 @@ const cn = {
       },
       CustomModel: {
         Title: "自定义模型名",
-        SubTitle: "增加自定义模型可选项，使用英文逗号隔开",
+        SubTitle: "增加自定义模型可选项",
       },
     },
 
