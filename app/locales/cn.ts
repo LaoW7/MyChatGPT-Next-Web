@@ -45,7 +45,7 @@ const cn = {
     },
     Commands: {
       new: "新建聊天",
-      newm: "从面具新建聊天",
+      newm: "从Prompt新建聊天",
       next: "下一个聊天",
       prev: "上一个聊天",
       clear: "清除上下文",
@@ -60,7 +60,7 @@ const cn = {
         dark: "深色模式",
       },
       Prompt: "快捷指令",
-      Masks: "所有面具",
+      Masks: "所有Prompt",
       Clear: "清除聊天",
       Settings: "对话设置",
     },
@@ -77,7 +77,7 @@ const cn = {
     Send: "发送",
     Config: {
       Reset: "清除记忆",
-      SaveAs: "存为面具",
+      SaveAs: "存为Prompt",
     },
     IsContext: "预设提示词",
   },
@@ -93,8 +93,8 @@ const cn = {
       SubTitle: "可以导出 Markdown 文本或者 PNG 图片",
     },
     IncludeContext: {
-      Title: "包含面具上下文",
-      SubTitle: "是否在消息中展示面具上下文",
+      Title: "包含Prompt上下文",
+      SubTitle: "是否在消息中展示Prompt上下文",
     },
     Steps: {
       Select: "选取",
@@ -219,18 +219,18 @@ const cn = {
 
       LocalState: "本地数据",
       Overview: (overview: any) => {
-        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个面具`;
+        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个Prompt`;
       },
       ImportFailed: "导入失败",
     },
     Mask: {
       Splash: {
-        Title: "面具启动页",
-        SubTitle: "新建聊天时，展示面具启动页",
+        Title: "Prompt启动页",
+        SubTitle: "新建聊天时，展示Prompt启动页",
       },
       Builtin: {
-        Title: "隐藏内置面具",
-        SubTitle: "在所有面具列表中隐藏内置面具",
+        Title: "隐藏内置Prompt",
+        SubTitle: "在所有Prompt列表中隐藏内置Prompt",
       },
     },
     Prompt: {
@@ -426,7 +426,7 @@ const cn = {
       },
       Share: {
         Title: "分享此Prompt",
-        SubTitle: "生成此面具的直达链接",
+        SubTitle: "生成此Prompt的直达链接",
         Action: "复制链接",
       },
     },
