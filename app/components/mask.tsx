@@ -157,7 +157,7 @@ export function MaskConfig(props: {
           ></input>
         </ListItem>
 
-        {!props.shouldSyncFromGlobal ? (
+        {/* {!props.shouldSyncFromGlobal ? (
           <ListItem
             title={Locale.Mask.Config.Share.Title}
             subTitle={Locale.Mask.Config.Share.SubTitle}
@@ -168,7 +168,7 @@ export function MaskConfig(props: {
               onClick={copyMaskLink}
             />
           </ListItem>
-        ) : null}
+        ) : null} */}
 
         {props.shouldSyncFromGlobal ? (
           <ListItem
@@ -453,13 +453,13 @@ export function MaskPage() {
           </div>
 
           <div className="window-actions">
-            <div className="window-action-button">
+            {/* <div className="window-action-button">
               <IconButton
                 icon={<DownloadIcon />}
                 bordered
                 onClick={downloadAll}
                 text={Locale.UI.Export}
-              />
+              /> 
             </div>
             <div className="window-action-button">
               <IconButton
@@ -468,7 +468,7 @@ export function MaskPage() {
                 bordered
                 onClick={() => importFromFile()}
               />
-            </div>
+            </div> */}
             <div className="window-action-button">
               <IconButton
                 icon={<CloseIcon />}
@@ -488,7 +488,7 @@ export function MaskPage() {
               autoFocus
               onInput={(e) => onSearch(e.currentTarget.value)}
             />
-            <Select
+            {/* <Select
               className={styles["mask-filter-lang"]}
               value={filterLang ?? Locale.Settings.Lang.All}
               onChange={(e) => {
@@ -508,7 +508,7 @@ export function MaskPage() {
                   {ALL_LANG_OPTIONS[lang]}
                 </option>
               ))}
-            </Select>
+            </Select> */}
 
             <IconButton
               className={styles["mask-create"]}
@@ -583,31 +583,33 @@ export function MaskPage() {
           <Modal
             title={Locale.Mask.EditModal.Title(editingMask?.builtin)}
             onClose={closeMaskModal}
-            actions={[
-              <IconButton
-                icon={<DownloadIcon />}
-                text={Locale.Mask.EditModal.Download}
-                key="export"
-                bordered
-                onClick={() =>
-                  downloadAs(
-                    JSON.stringify(editingMask),
-                    `${editingMask.name}.json`,
-                  )
-                }
-              />,
-              <IconButton
-                key="copy"
-                icon={<CopyIcon />}
-                bordered
-                text={Locale.Mask.EditModal.Clone}
-                onClick={() => {
-                  navigate(Path.Masks);
-                  maskStore.create(editingMask);
-                  setEditingMaskId(undefined);
-                }}
-              />,
-            ]}
+            actions={
+              [
+                // <IconButton
+                //   icon={<DownloadIcon />}
+                //   text={Locale.Mask.EditModal.Download}
+                //   key="export"
+                //   bordered
+                //   onClick={() =>
+                //     downloadAs(
+                //       JSON.stringify(editingMask),
+                //       `${editingMask.name}.json`,
+                //     )
+                //   }
+                // />,
+                // <IconButton
+                //   key="copy"
+                //   icon={<CopyIcon />}
+                //   bordered
+                //   text={Locale.Mask.EditModal.Clone}
+                //   onClick={() => {
+                //     navigate(Path.Masks);
+                //     maskStore.create(editingMask);
+                //     setEditingMaskId(undefined);
+                //   }}
+                // />,
+              ]
+            }
           >
             <MaskConfig
               mask={editingMask}
