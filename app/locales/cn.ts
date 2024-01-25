@@ -400,7 +400,7 @@ const cn = {
       Create: "新建",
     },
     Item: {
-      //Info: (count: number) => `包含 ${count} 条预设对话`,
+      Info: (count: number) => `包含 ${count} 条预设对话`,
       Chat: "对话",
       View: "查看",
       Edit: "编辑",
